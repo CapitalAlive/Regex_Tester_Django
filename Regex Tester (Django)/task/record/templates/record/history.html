@@ -1,0 +1,5 @@
+{% for element in data %}
+    <li>
+        <a href={% url 'result' pk=element.pk %}>{{element.regex}}</a>
+    </li>
+{%endfor%}
